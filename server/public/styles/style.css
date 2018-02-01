@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+
+.buttonsleft {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px; 
+    display: flex;
+    flex-direction: column;
+    border: thick;
+    border: 1px;
+}
+
+.buttonsright {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    margin: 8px;
+    width: 100px;
+    height: 30px;
+ border-style: solid;
+ border-color: red;
+ border-width: 3px;
+ border-radius: 25px;
+}
+
+.email {
+    margin: 8px;
+    width: 100px;
+    height: 30px;
+ border-style: solid;
+ border-color: rgb(254, 218, 13);
+ border-width: 3px;
+ border-radius: 25px;
+}

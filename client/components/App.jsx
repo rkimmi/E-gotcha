@@ -20,18 +20,20 @@ class App extends React.Component {
         return (
             <div>
             <div className="container">
+            <div className="row">
                 <div className="buttonsleft">
                     <button className="button" value="workout">Excercise</button>
                     <button className="email" value="emails">Email</button>
                 </div>
-                <div className="character">
-                    <Line percent="60" strokeWidth="15" strokeColor="#8fe27c" />
+                <div className="character"> 
+                    <div className="characterpic"/>
+                    <Line className="HPbar" percent="60" strokeWidth="15" strokeColor="#25a340" />
                 </div>
-            </div>
             <div className="buttonsright">
                 <button className="button" value="eat">Eat</button>
                 <button className="button" value="zzz">Sleep</button>
-                <Line percent="60" strokeWidth="4" strokeColor="#60ba4c" />
+                </div>
+            </div>
             </div>
             </div>
         )

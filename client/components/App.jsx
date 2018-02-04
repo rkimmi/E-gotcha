@@ -8,7 +8,7 @@ class App extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="buttonsleft">
-                            <button onClick={() => this.refs.kimmi.changeHealth(10, "excercise")} className="button" value="workout">Excercise</button>
+                            <button onClick={() => this.refs.kimmi.changeHealth(10, "exercise")} className="button" value="workout">Exercise</button>
                             <button className="email" value="emails">Email</button>
                         </div>
                         <div className="character">

@@ -9,7 +9,7 @@ class HP extends React.Component {
       numClicks: { 
         eat: 0, // track no of clicks for each action
         sleep: 0,
-        excercise: 0,
+        exercise: 0,
       }
   }
   this.changeHealth = this.changeHealth.bind(this)
@@ -21,7 +21,7 @@ changeHealth (healthNo, action) {
 
  let newEat = (this.state.numClicks.eat)
  let newSleep = (this.state.numClicks.sleep)
- let newExcercise = (this.state.numClicks.excercise)
+ let newExercise = (this.state.numClicks.exercise)
 
 
  if (action === "eat" && newEat > 4) {healthNo = 0} 
@@ -29,8 +29,8 @@ changeHealth (healthNo, action) {
  if (action === "sleep"  && newSleep > 0) 
  {healthNo = 0} 
     else if (action === "sleep") {newSleep += 1}
- if (action == "excercise" && newExcercise > 1) {healthNo = 0}
-    else if (action === "excercise") {newExcercise += 1}
+ if (action == "exercise" && newExercise > 1) {healthNo = 0}
+    else if (action === "exercise") {newExercise += 1}
 
 
  let newHealth = (this.state.avatarHealth + healthNo)
@@ -40,14 +40,14 @@ changeHealth (healthNo, action) {
 console.log(newHealth)
 console.log(newEat)
 console.log(newSleep)
-console.log(newExcercise)
+console.log(newExercise)
 
  this.setState({
    avatarHealth: newHealth + healthDecrement,
    numClicks: {
    eat: newEat,
    sleep: newSleep,
-   excercise: newExcercise
+   exercise: newExercise
    }
  })
 }

@@ -12,7 +12,7 @@ class App extends React.Component {
                             <button className="email" value="emails">Email</button>
                         </div>
                         <div className="character">
-                            <div className="characterpic" />
+                            <img className="characterpic" src='blank-3.png'/>
                             <div className="HPbar">
                             <HP ref="kimmi"/>
                             </div>

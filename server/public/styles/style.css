@@ -1,3 +1,7 @@
+  
+  body {
+
+}
 
 .container {
   display: flex;
@@ -36,10 +40,9 @@
 }
 
 .characterpic {
+    background-color: white;
     width: 200px;
     height: 300px;
-    border-style: dotted;
-    border-color: #1e56d8;
     margin: 20px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }

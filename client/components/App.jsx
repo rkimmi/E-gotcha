@@ -1,6 +1,7 @@
 import React from 'react'
 import HP from './HpLevels'
 // import Email from './Email'
+import {HashRouter as Router, Route, Link} from 'react-router-dom'
 
 class App extends React.Component {
    constructor(props) {
@@ -22,11 +23,12 @@ class App extends React.Component {
     render() {
         return (
             <div>
+                <Router>
                 <div className="container">
                     <div className="row">
                         <div className="buttonsleft">
                             <button onClick={() => this.refs.kimmi.changeHealth(10, "exercise")} className="button" value="workout">Exercise</button>
-                            <button className="email" value="emails" onClick={this.showEmail}>Email</button>
+                            <Link to='/e'><button className="email" value="emails" onClick={this.showEmail}>Email</button></Link>
                         </div>
                         <div className="character">
                             <img className="characterpic" src='blank-3.png'/>
@@ -40,6 +42,7 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div>
+                </Router>
             </div>
         )
     }

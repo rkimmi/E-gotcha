@@ -3,6 +3,7 @@ class Email extends React.Component {
         return (
          <div>
              <div className="emailbox">
+             {this.props.email}
              email!
              </div>
          </div>

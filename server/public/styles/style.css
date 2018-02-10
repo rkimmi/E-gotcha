@@ -1,3 +1,7 @@
+  
+  body {
+
+}
 
 .container {
   display: flex;
@@ -36,21 +40,16 @@
 }
 
 .characterpic {
+    margin-top: 30px;
     width: 200px;
     height: 300px;
-    border-style: dotted;
-    border-color: #1e56d8;
     margin: 20px;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
-
 .HPbar {
-    display: flex;
-    justify-content: center;
     margin: 20px;
     padding-left: 5px;
-    width: 200px;
+    width: 210px;
 }
 
 
@@ -65,22 +64,33 @@
 
 .button {
     margin: 15px;
-    width: 100px;
+    width: 80px;
     height: 30px;
  border-style: solid;
  border-color: red;
- border-width: 3px;
- border-radius: 25px;
+ border-width: 1px;
+ border-radius: 7px;
  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
+.button:active {
+    background-color: #eb9292;
+    color: aliceblue;
+}
+
 .email {
+    /* background: url(/email.png); */
     margin: 15px;
-    width: 100px;
+    width: 80px;
     height: 30px;
  border-style: solid;
- border-color: rgb(254, 218, 13);
- border-width: 3px;
- border-radius: 25px;
+ border-color: #7194dd;
+ border-width: 1px;
+ border-radius: 7px;
  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.email:active {
+background-color: #7194dd;
+color: aliceblue;
 }

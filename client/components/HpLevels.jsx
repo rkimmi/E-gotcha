@@ -26,10 +26,9 @@ class HP extends React.Component {
         this.setState({
           avatarHealth: this.state.avatarHealth - this.state.decrement,
           numClicks: {
-            eat: 3,
+            eat: 3, // can eat once more after 10 sec
             sleep: 0,
             exercise: 1
-
           }
         })
       }

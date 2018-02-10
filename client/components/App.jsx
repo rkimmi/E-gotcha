@@ -1,7 +1,24 @@
 import React from 'react'
 import HP from './HpLevels'
+// import Email from './Email'
 
 class App extends React.Component {
+   constructor(props) {
+       super(props)
+
+       this.state = {
+          emails: [],
+          emailsVisible: false
+       }
+       this.showEmail = this.showEmail.bind(this)
+   }
+
+   showEmail () {
+    this.setState({
+        emailsVisible: true
+    })
+   }
+
     render() {
         return (
             <div>
@@ -9,7 +26,7 @@ class App extends React.Component {
                     <div className="row">
                         <div className="buttonsleft">
                             <button onClick={() => this.refs.kimmi.changeHealth(10, "exercise")} className="button" value="workout">Exercise</button>
-                            <button className="email" value="emails">Email</button>
+                            <button className="email" value="emails" onClick={this.showEmail}>Email</button>
                         </div>
                         <div className="character">
                             <img className="characterpic" src='blank-3.png'/>

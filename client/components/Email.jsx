@@ -1,10 +1,11 @@
+import React from 'react'
+
 class Email extends React.Component {
     render() {
         return (
          <div>
              <div className="emailbox">
-             {this.props.email}
-             email!
+             <h1>email!</h1>
              </div>
          </div>
       )

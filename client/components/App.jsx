@@ -6,21 +6,27 @@ import Email from './Email'
 import SetUp from './SetUp'
 
 class App extends React.Component {
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //         emails: [],
-    //         emailsVisible: false
-    //     }
-    //     this.showEmail = this.showEmail.bind(this)
-    // }
+    constructor(props) {
+        super(props)
+        this.state = {
+            emails: [],
+            emailsVisible: false
+        }
+        this.showEmail = this.showEmail.bind(this)
+    }
 
-    // showEmail() {
-    //     this.setState({
-    //         emailsVisible: true
-    //     })
-    // }
+    showEmail() {
+        this.setState({
+            emailsVisible: true
+        })
+    }
 
+    hideDetails () {
+        this.setState({
+          detailsVisible: false
+        })
+    }
+    
     render() {
         return (
             <Router>

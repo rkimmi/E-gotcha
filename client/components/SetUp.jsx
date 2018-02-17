@@ -1,6 +1,8 @@
 import React from 'react'
-import HP from './HpLevels'
 import { HashRouter as Router, Route, Link } from 'react-router-dom'
+
+import HP from './HpLevels'
+import Email from './Email'
 
 class SetUp extends React.Component {
     render () {
@@ -11,7 +13,7 @@ class SetUp extends React.Component {
                         <div className="row">
                             <div className="buttonsleft">
                                 <button onClick={() => this.refs.kimmi.changeHealth(10, "exercise")} className="button" value="workout">Exercise</button>
-                                <Link to='/e'><button className="email" value="emails" onClick={this.showEmail}>Email</button></Link>
+                                <Email />
                                 {/* <Email email={this.showEmail} /> */}
                             </div>
                             <div className="character">

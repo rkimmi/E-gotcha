@@ -28,6 +28,8 @@
     "react-progressbar.js": "^0.2.0",
     "react-sound": "^1.1.0",
     "react-sweet-progress": "^1.1.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
     "simple-react-progress-bar": "^2.1.0"
   },
   "devDependencies": {
@@ -37,7 +39,9 @@
     "babel-preset-react": "^6.24.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
+    "superagent": "^3.8.2",
     "webpack": "^3.10.0"
   },
   "description": "",

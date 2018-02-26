@@ -1,8 +1,8 @@
 import React from 'react'
 // import HP from './HpLevels'
 import { HashRouter as Router, Route, Link } from 'react-router-dom'
-import Email from './Email'
 
+import Email from './Email'
 import SetUp from './SetUp'
 
 class App extends React.Component {

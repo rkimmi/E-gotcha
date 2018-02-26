@@ -24,4 +24,10 @@ class Email extends React.Component {
     }
 }
 
-export default Email
+const mapStateToProps = (state) => {
+    return {
+        email: state.email
+    }
+}
+
+export default connect(mapStateToProps)(Email)

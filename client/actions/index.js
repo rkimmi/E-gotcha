@@ -16,18 +16,3 @@ export const recieveEmail = (email) => {
     email: email.map(mail => mail.data)
   }
 }
-
-// THUNK
-// export function fetchPosts (subreddit) {
-//   return (dispatch) => {
-//     dispatch(requestPosts())
-//     return request
-//       .get(`/api/v1/reddit/subreddit/${subreddit}`)
-//       .then(res => {
-//         dispatch(receivePosts(res.body))
-//       })
-//       .catch(err => {
-//         dispatch(showError(err.message))
-//       })
-//   }
-// }

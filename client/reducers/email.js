@@ -1,6 +1,6 @@
 import {SHOW_EMAIL_BOX} from '../actions'
 
-function subreddits (state = [], action) {
+function showEmail (state = [], action) {
   switch (action.type) {
     case SHOW_EMAIL_BOX:
       return true
@@ -10,4 +10,4 @@ function subreddits (state = [], action) {
   }
 }
 
-export default subreddits
+export default showEmail

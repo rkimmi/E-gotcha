@@ -1,7 +1,6 @@
 import React from 'react'
 import { Progress } from 'react-sweet-progress';
 
-import Sound from 'react-sound'
 
 class HP extends React.Component {
   constructor (props) {

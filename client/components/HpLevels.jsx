@@ -11,7 +11,7 @@ class HP extends React.Component {
       numClicks: { 
         eat: 0, // track no of clicks for each action
         sleep: 0,
-        exercise: 0,
+        exercise: 0
       }
   }
   this.changeHealth = this.changeHealth.bind(this)
@@ -20,7 +20,6 @@ class HP extends React.Component {
   componentDidMount() {
     setInterval(() => {
       const decrement = 2
-      // reduce numclicks eat by one
       if (this.state.avatarHealth - this.state.decrement > 0) {
         this.setState({
           avatarHealth: this.state.avatarHealth - this.state.decrement,
@@ -71,7 +70,10 @@ console.log(newExercise)
     render() {
            return (
         <div>
-          <Progress theme={{success: {symbol: '100%', color: '#f2db82'}, active: {color: '#9cb2e2'} }} percent={this.state.avatarHealth}/>
+          <Progress theme={{success: 
+            {symbol: '100%', color: '#f2db82'}, 
+            active: {color: '#9cb2e2'} }} 
+            percent={this.state.avatarHealth}/>
           <h1>{this.state.healthDecrement}</h1>
         </div>
       );

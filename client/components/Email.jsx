@@ -1,6 +1,7 @@
 import React from 'react'
-import {connect} from 'react-redux'
-import {showEmailBox} from '../actions'
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { showEmailBox } from '../actions'
 
 class Email extends React.Component {
     constructor(props) {
@@ -8,19 +9,16 @@ class Email extends React.Component {
         this.handleChange = this.handleChange.bind(this)
     }
 
-    handleChange () {
-    this.props.showEmailBox // does nothing
+    handleChange() {
+        this.props.showEmailBox // does nothing
     }
 
     render() {
         return (
-         <div>
-         <button className='email' value='email' onClick={this.handleChange}>Email</button> 
-             {/* <div className="emailbox">
-             <h1>email!</h1>
-             </div> */}
-         </div>
-      )
+            <div>
+                <h3>Email!</h3>
+            </div>
+        )
     }
 }
 

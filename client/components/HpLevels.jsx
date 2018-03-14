@@ -7,9 +7,9 @@ class HP extends React.Component {
     super(props)
     this.state = {
       decrement: 2,
-      avatarHealth: 60, // starting health
+      avatarHealth: 60, // initial health
       numClicks: { 
-        eat: 0, // track no of clicks for each action
+        eat: 0, 
         sleep: 0,
         exercise: 0
       }
@@ -24,7 +24,7 @@ class HP extends React.Component {
         this.setState({
           avatarHealth: this.state.avatarHealth - this.state.decrement,
           numClicks: {
-            eat: 3, // can eat once more after 10 sec
+            eat: 3, // can eat twice more after 10 sec
             sleep: 0,
             exercise: 1
           }
@@ -48,14 +48,12 @@ changeHealth (healthNo, action) {
     else if (action === "exercise") {newExercise += 1}
 
  let newHealth = (this.state.avatarHealth + healthNo)
- let decrement = (this.state.avatarHealth - 1)
  if (newHealth > 100) newHealth = 100
  if (newHealth < 0) newHealth = 0
  
 console.log(newHealth)
 console.log(newEat)
-console.log(newSleep)
-console.log(newExercise)
+
 
  this.setState({
    avatarHealth: newHealth,

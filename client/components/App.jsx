@@ -8,11 +8,6 @@ import SetUp from './SetUp'
 class App extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            emails: [],
-            emailsVisible: false
-        }
-        this.showEmail = this.showEmail.bind(this)
     }
 
     showEmail() {

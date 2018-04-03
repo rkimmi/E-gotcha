@@ -9,24 +9,23 @@ class App extends React.Component {
         super(props)
     }
 
-    // showEmail() {
-    //     this.setState({
-    //         emailsVisible: true
-    //     })
-    // }
+    showEmail() {
+        this.setState({
+            emailsVisible: true
+        })
+    }
 
-    // hideDetails () {
-    //     this.setState({
-    //       detailsVisible: false
-    //     })
-    // }
+    hideDetails () {
+        this.setState({
+          detailsVisible: false
+        })
+    }
     
     render() {
         return (
             <Router>
             <div>
                  <Route path='/' component={SetUp} />
-                 <Route path='/:e' component={Email} />
                 
             </div>
             </Router>

@@ -13,7 +13,9 @@ class SetUp extends React.Component {
                         <div className="row">
                             <div className="buttonsleft">
                                 <button onClick={() => this.refs.kimmi.changeHealth(10, "exercise")} className="button" value="workout">Exercise</button>
-                                <Email />
+                                <Link to='/e'>
+                                    <button className='email' value='email' onClick={this.handleChange}>Email</button>
+                                </Link>
                                 {/* <Email email={this.showEmail} /> */}
                             </div>
                             <div className="character">

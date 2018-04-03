@@ -89,6 +89,12 @@ body {
  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
+.email-box {
+    height: 500px;
+    width: 500px;
+    border-style: solid;
+    border-color: #7194dd;
+}
 .email:active {
 background-color: #7194dd;
 color: aliceblue;

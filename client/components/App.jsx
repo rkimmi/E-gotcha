@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter as Router, Route, Link } from 'react-router-dom'
 
-import Email from './Email'
+import EmailBox from './EmailBox'
 import SetUp from './SetUp'
 
 class App extends React.Component {
@@ -26,6 +26,7 @@ class App extends React.Component {
             <Router>
             <div>
                  <Route path='/' component={SetUp} />
+                 <Route exact path='/e' component={EmailBox} />
                 
             </div>
             </Router>
